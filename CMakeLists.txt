@@ -9,9 +9,10 @@ find_package(kashmir REQUIRED)
 #find_package(Boost COMPONENTS system REQUIRED)
 find_package(restbed REQUIRED)
 
-INCLUDE_DIRECTORIES(${restbed_INCLUDE}
-        ${kashmir_INCLUDE}
+INCLUDE_DIRECTORIES(
         ${asio_INCLUDE}
+        ${restbed_INCLUDE}
+        ${kashmir_INCLUDE}
         ${SOURCE_DIR})
 
 set(SOURCE_FILES

@@ -4,3 +4,6 @@
 [submodule "dependency/restbed"]
 	path = dependency/restbed
 	url = https://github.com/Corvusoft/restbed
+[submodule "dependency/websocketpp"]
+	path = dependency/websocketpp
+	url = https://github.com/zaphoyd/websocketpp

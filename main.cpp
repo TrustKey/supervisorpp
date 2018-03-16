@@ -5,18 +5,16 @@
 using namespace std;
 using namespace restbed;
 
-void post_method_handler( const shared_ptr< Session > session )
-{
+void get_method(const shared_ptr<Session> session) {
     const auto request = session->get_request( );
     int content_length = request->get_header( "Content-Length", 0 );
     session->close( OK, "Hello, World!", { { "Content-Length", "13" } } );
 }
 
-int main( const int, const char** )
-{
+int main(const int argc, const char** argv) {
     auto resource = make_shared< Resource >( );
     resource->set_path( "/resource" );
-    resource->set_method_handler( "GET", post_method_handler );
+    resource->set_method_handler("GET", get_method);
 
     auto settings = make_shared< Settings >( );
     settings->set_port( 1984 );
