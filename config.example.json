@@ -1,0 +1,7 @@
+{
+  "ssl_certificate": "certs/fullchain.pem",
+  "ssl_certificate_key": "certs/privkey.pem",
+  "temporary_diffie_hellman": "certs/dh768.pem",
+  "http_server_port": 4000,
+  "https_server_port": 5000
+}

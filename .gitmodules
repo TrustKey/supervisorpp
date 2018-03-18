@@ -7,3 +7,6 @@
 [submodule "dependency/websocketpp"]
 	path = dependency/websocketpp
 	url = https://github.com/zaphoyd/websocketpp
+[submodule "dependency/args"]
+	path = dependency/args
+	url = https://github.com/Taywee/args
